@@ -1,7 +1,8 @@
 BINARY_NAME=composite
 build:
 	go build -o ${BINARY_NAME} ./...
-
+tidy:
+	go mod tidy
 run:
 	./${BINARY_NAME}
 fmt:
@@ -9,4 +10,4 @@ fmt:
 clean:
 	go clean
 	rm ${BINARY_NAME}
-all: fmt build run
+all: fmt tidy build run
