@@ -1,4 +1,4 @@
-BINARY_NAME=composite
+BINARY_NAME=composite_bin
 build:
 	go build -o ${BINARY_NAME} ./...
 tidy:
